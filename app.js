@@ -9,6 +9,7 @@ app.set('view engine', 'mustache')
 
 app.use(express.urlencoded())
 app.use('/movies', moviesRouter)
+app.use('/css-1', express.static('css'))
 
 global.movies = []
 
