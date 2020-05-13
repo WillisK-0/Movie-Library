@@ -1,0 +1,24 @@
+<html>
+
+<head></head>
+
+<body>
+
+<h1>Add a movie to your library</h1>
+
+<form method='POST' action='/movies/create'> 
+    <input type='text' placeHolder='Enter movie title' name='title'>
+    <input type='text' placeHolder='Enter description' name='description'>
+    <input type='text' placeHolder='Enter genre' name='genre'>
+    <input type='text' placeHolder='Enter image url' name='imageURL'>
+    <button>Create</button>
+</form>
+
+{{#title}}
+    {{title}} has been added to the movie library.
+{{/title}}
+
+
+</body>
+
+</html>
